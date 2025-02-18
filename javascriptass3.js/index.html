@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function func1(input){
+        if(input<=1){
+            return 0;
+        }
+        else if (input===2){
+            return 1;
+        }
+        else{
+            return func1(input-1)+func1(input-2);
+        }   
+        }
+        let n=parseInt(prompt('enter a number to get the fibanocci'))
+        for(i=1;i<n;i++){
+        console.log(func1(i));}
+     </script>
+</body>
+   </html>
